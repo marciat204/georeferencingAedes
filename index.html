@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AMIA</title>
+    <meta name="description" content="Your Description Here">
+    <meta name="keywords" content="bootstrap themes, portfolio, responsive theme">
+    <meta name="author" content="ThemeForces.Com">
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-.png">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+    <!-- Stylesheet
+    ================================================== -->
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,100,800,900,400,200,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+
+
+
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAK31lrUKDpdoBoQpm-GX07BFh3d-s-Ff0"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+     Include all compiled plugins (below), or include individual files as needed
+     <script type="text/javascript" src="js/bootstrap.js"></script> -->
+    
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+
+
+    <!-- Javascripts
+    ================================================== -->
+    <script type="text/javascript" src="js/main.js"></script> 
+    <script type="text/javascript" src="js/mapa.js"></script>
+
+
+
+    
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="tf-home">
+        <div class="overlay">
+            <div id="sticky-anchor"></div>
+            <nav id="tf-menu" class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+             
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#tf-home">Home</a></li>
+                        <li><a href="#map">Map</a></li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+
+            <div class="container">
+                <div class="content">
+                    <h1>Teste</h1>
+                    <h3>that communicates, connects and engages customers</h3>
+                    <br>
+                    <a href="#tf-contact" class="btn btn-primary my-btn">Contact</a>
+                    <a href="#tf-portfolio" class="btn btn-primary my-btn2">Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<div class="tf-map" id="map">
+		<div style="z-index:10000; position:absolute; right:0; background:white;padding:15px; margin-right:20px; margin-top: 20px; box-shadow: 10px 10px 18px -6px rgba(0,0,0,0.23);">
+			<select id="cpf">
+				<option value="" disabled selected>Agente</option>
+	    	</select>
+			
+			<p>From: <input type="text" id="from" /></p>
+			<p>To:   <input type="text" id="to" /></p>
+
+			<input type="button" id="btnInfo" value="Valor selecionado" />
+		</div>
+    	<div id="map-canvas" style="z-index:200">
+    		
+    	</div>	  
+    </div>
+
+
+    <nav id="tf-footer">
+        <div class="container"></div>
+    </nav>
+   
+
+
+  </body>
+</html>
