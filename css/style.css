@@ -312,3 +312,40 @@ nav#tf-footer {
 .tf-map{
 	height: 80%;
 }
+
+.map-content{
+	width: 300px;
+	z-index:10000;
+	position:absolute;
+	right:0;
+	background:white;
+	padding:15px;
+	margin-right:20px;
+	margin-top: 20px;
+	box-shadow: 10px 10px 18px -6px rgba(0,0,0,0.23);
+	float:left;
+}
+
+.row{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding: 5px;
+	margin: auto;
+}
+
+.col-3{
+	width: 14%;
+	margin-right: 1%;
+	float: left;
+}
+
+.col-9{
+	width: 85%;
+	height: auto;
+	float: left;
+}
+
+.col-9 input{
+	width: 100%;
+}

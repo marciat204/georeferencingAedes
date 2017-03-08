@@ -17,8 +17,7 @@
   var dat = new Date(2016-03-02);
   var dat2 = new Date(2016-03-02);
 
-  console.log(dat.getTime() === dat2.getTime());
-
+  
 
 	function processData(allText) {
 	    var record_num = 4;  // or however many elements there are in each row
@@ -74,15 +73,45 @@
       document.getElementById("btnInfo").onclick = function() {
         locFilt = [];
         locFilt.push(locations[0]);
-         for (var i = 1; i < locations.length; i++) {
+         
+
+
+      var iniDate = $('#from').val();
+      var finalDate = $('#to').val();
+
+      var dat = new Date(iniDate);
+      var dat2 = new Date(finalDate);
+
+      if(!iniDate || !finalDate){
+        console.log("oi");
+
+        for (var i = 1; i < locations.length; i++) {
            if (locations[i][0] === cpfs.options[cpfs.selectedIndex].value) {
              locFilt.push(locations[i]);
            }
          }
+
+      }else{
+
+        for (var i = 1; i < locations.length; i++) {
+          var dataColeta = new Date(locations[i][1]);
+
+           if ((locations[i][0] === cpfs.options[cpfs.selectedIndex].value) && ( dataColeta >= dat.getTime() && dataColeta <= dat2)) {
+             locFilt.push(locations[i]);
+           }
+         }
+
+      }
+
 		  map = new google.maps.Map( document.getElementById("map-canvas"), mapOptions );
 			loadPoints(locFilt);
           
-      };
+    };
+
+    document.getElementById("resetar").onclick = function(){
+      map = new google.maps.Map( document.getElementById("map-canvas"), mapOptions );
+      loadPoints(locations);
+    };
 
 
     $(function() {

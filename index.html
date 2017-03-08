@@ -108,15 +108,31 @@
 
 
 	<div class="tf-map" id="map">
-		<div style="z-index:10000; position:absolute; right:0; background:white;padding:15px; margin-right:20px; margin-top: 20px; box-shadow: 10px 10px 18px -6px rgba(0,0,0,0.23);">
+		<div class="map-content">
+            <p>Select Agent:
 			<select id="cpf">
-				<option value="" disabled selected>Agente</option>
+				<option value="" disabled selected>Agent</option>
 	    	</select>
-			
-			<p>From: <input type="text" id="from" /></p>
-			<p>To:   <input type="text" id="to" /></p>
+			</p>
+            <div class="row">
+                <div class="col-3">
+                    From: 
+                </div>
+                <div class="col-9">
+                    <input type="text" id="from" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    To:
+                </div>
+                <div class="col-9">
+                    <input type="text" id="to" />
+                </div>
+            </div>
 
-			<input type="button" id="btnInfo" value="Valor selecionado" />
+			<input type="button" id="btnInfo" value="OK" />
+            <input type="button" id="resetar" value="Reset" />
 		</div>
     	<div id="map-canvas" style="z-index:200">
     		
